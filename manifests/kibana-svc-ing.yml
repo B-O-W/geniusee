@@ -1,0 +1,27 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: geniusee-kibana
+spec:
+  externalName: vpc-geniusee-es-tic5m5fptpq3sltcmbyihhtuba.us-east-2.es.amazonaws.com
+  sessionAffinity: None
+  type: ExternalName
+---
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  annotations:
+    # nginx.ingress.kubernetes.io/rewrite-target: /
+    # nginx.ingress.kubernetes.io/ssl-redirect: "false"
+    nginx.ingress.kubernetes.io/backend-protocol: HTTPS
+  name: geniusee-kibana
+spec:
+  rules:
+  - host: geniusee-kibana.com
+    http:
+      paths:
+      - backend:
+          serviceName: geniusee-kibana
+          servicePort: 443
+        path: /
+        pathType: ImplementationSpecific
