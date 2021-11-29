@@ -63,6 +63,10 @@ Run the following command to retrieve the access credentials for your cluster an
 ```bash
 $ aws eks --region $(terraform output -raw region) update-kubeconfig --name $(terraform output -raw cluster_name)
 ```
+2)And Run with eksctl
+```bash
+$ eksctl create cluster --name k8s-geniusee
+```
 <img src="./images/kubeconfig.PNG">
 <img src="./images/get-nodes.PNG">
 
