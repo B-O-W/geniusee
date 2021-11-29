@@ -23,3 +23,10 @@
 
   - debug: var=kubecheck.stdout_lines
 
+  - name: Start Ingress in your cluster
+    shell: "kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-0.32.0/deploy/static/provider/aws/deploy.yaml && kubectl get pods -n ingress-nginx"
+    register: "nlbout"
+
+  - debug: var=nlbout.stdout_lines
+
+kubectl -n ingress-nginx get svc | grep -i loadbalancer | awk '{print$3}'
