@@ -72,7 +72,7 @@ Start by creating the mandatory resources for NGINX Ingress in your cluster:
 $ kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-0.32.0/deploy/static/provider/aws/deploy.yaml
 ```
 FYI: The above manifest file also launches the Network Load Balancer(NLB)
-
+<img src="./images/NLB.PNG">
 ## FYI: Default ES/Kibana Credentials:
 - ES Username geniusee
 - ES Password `aDAsd#3455fg!#45`
