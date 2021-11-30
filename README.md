@@ -23,6 +23,7 @@ To start using, you will need:
 - terraform
 - kubectl
 - wget (required for the eks module)
+- Ansible
 
 ## Configure AWS
 Configure it by running `aws configure`
@@ -37,7 +38,7 @@ $ YOUR_AWS_REGIONDefault output format [None]: json
 ## Quick Install:
 Just run the the following command:
 ```bash
-$ ./setup.sh
+$ ansible-playbook setup.yaml
 ```
 # The EKS/AES Seperate Clusters
 <img src="https://www.alfresco.com/sites/www.alfresco.com/files/2018/Nov/amazoneks_twitter.jpg?_buster=CFwpRD-B">
@@ -79,8 +80,8 @@ FYI: The above manifest file also launches the Network Load Balancer(NLB)
 <img src="./images/NLB.PNG">
 <img src="./images/task2.PNG">
 ## FYI: Default ES/Kibana Credentials:
-- ES Username geniusee
-- ES Password `aDAsd#3455fg!#45`
+- ES Username geniusee-user
+- ES Password `DevOps3012!@!@`
 
 ## Then, deploy the Fluentd to EKS
 ```bash
