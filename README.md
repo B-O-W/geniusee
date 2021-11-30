@@ -1,6 +1,6 @@
-                    # Terraform IaaC Provision (EKS/NLB/AES)
-# Geniusee Task
-<img src="https://miro.medium.com/max/1400/1*nOzoxedt4g5GWqOjE4v86A.png">
+# Author Mammadov Elbrus
+# Geniusee Task 
+<img src="https://st6.io/static/bb64db70072ae149e0867b7c02d44d5d/0abdd/terraform-and-aws.png">
 
 ### AWS EKS:
 - Ingress Controller (NLB)
