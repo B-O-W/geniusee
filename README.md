@@ -99,7 +99,7 @@ $ kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/co
 FYI: The above manifest file also launches the Network Load Balancer(NLB)
 <img src="./images/NLB.PNG">
 <img src="./images/task2.PNG">
-## FYI: Default ES/Kibana Credentials:
+## FYI: ES/Kibana Credentials:
 - ES Username geniusee-user
 - ES Password `Geniusee@!@!@!`
 
