@@ -42,7 +42,7 @@ Just run the the ansible-playbook:
 $ ansible-playbook setup.yaml
 ```
 # The EKS/AES Seperate Clusters
-<img src="https://www.alfresco.com/sites/www.alfresco.com/files/2018/Nov/amazoneks_twitter.jpg?_buster=CFwpRD-B">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdGdSdc6HUzSmXJ58oM0AT-cB7VACwU_n7xQ&usqp=CAU">
 <img src="https://squadex.com/wp-content/uploads/2017/11/amazon-elasticsearch-service@2x.png">
 
 ## Provision IaaC by Terraform
