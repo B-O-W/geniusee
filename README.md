@@ -43,7 +43,7 @@ $ ansible-playbook setup.yaml
 ```
 # The EKS/AES Seperate Clusters
 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdGdSdc6HUzSmXJ58oM0AT-cB7VACwU_n7xQ&usqp=CAU">
-<img src="https://squadex.com/wp-content/uploads/2017/11/amazon-elasticsearch-service@2x.png">
+<img src="https://miro.medium.com/max/724/1*5NmgD2Shs9bkrNcA09hPfw.png">
 
 ## Provision IaaC by Terraform
 ## Initialize Terraform workspace with upgrades
