@@ -86,8 +86,8 @@ resource "aws_elasticsearch_domain" "es" {
      internal_user_database_enabled = true  
      master_user_options {
         #  master_user_arn      = "arn:aws:es:${data.aws_region.current.name}:${data.aws_caller_identity.current.account_id}:user/geniusee"
-         master_user_name     = "geniusee"	
-         master_user_password = "aDAsd#3455fg!#45"
+         master_user_name     = "geniusee-user"	
+         master_user_password = "Geniusee@!@!@!"
      }
   }
 

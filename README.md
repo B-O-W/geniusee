@@ -81,7 +81,7 @@ FYI: The above manifest file also launches the Network Load Balancer(NLB)
 <img src="./images/task2.PNG">
 ## FYI: Default ES/Kibana Credentials:
 - ES Username geniusee-user
-- ES Password `DevOps3012!@!@`
+- ES Password `Geniusee@!@!@!`
 
 ## Then, deploy the Fluentd to EKS
 ```bash
