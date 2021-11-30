@@ -24,6 +24,7 @@ To start using, you will need:
 - kubectl
 - wget (required for the eks module)
 - Ansible
+- AWS EC2 
 
 ## Configure AWS
 Configure it by running `aws configure`
@@ -36,7 +37,7 @@ $ YOUR_AWS_SECRET_ACCESS_KEYDefault region name [None]:
 $ YOUR_AWS_REGIONDefault output format [None]: json
 ```
 ## Quick Install:
-Just run the the following command:
+Just run the the ansible-playbook:
 ```bash
 $ ansible-playbook setup.yaml
 ```
