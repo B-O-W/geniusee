@@ -88,8 +88,11 @@ eksctl create cluster --name k8s-geniusee --version 1.15 \
 $ eksctl get cluster
 ```
 <img src="./images/k8s.PNG">
+
 ## Network Load Balancer with the NGINX Ingress resource in EKS
+
 Start by creating the mandatory resources for NGINX Ingress in your cluster:
+
 ```bash
 $ kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-0.32.0/deploy/static/provider/aws/deploy.yaml
 ```
