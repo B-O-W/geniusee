@@ -81,7 +81,8 @@ eksctl create cluster --name k8s-geniusee --version 1.15 \
 	--kubeconfig ${KUBECONFIG}
 ```
 <img src="./images/kubeconfig.PNG">
-## To check use this command:
+```
+To check use this command
 ```bash
 $ eksctl get cluster
 ```
