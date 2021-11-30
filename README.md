@@ -73,7 +73,7 @@ export AWS_SECRET_ACCESS_KEY=<>
 export AWS_DEFAULT_REGION=us-east-1
 export KUBECONFIG=~/.kube/config-eks-cluster
 
-eksctl create cluster --name geniusee-cluster --version 1.15 \
+eksctl create cluster --name k8s-geniusee --version 1.15 \
         --region us-east-1 --zones "us-east-1b,us-east-1c" \
 	--nodegroup-name standard-workers --node-type m5a.4xlarge \
          --nodes 5 --nodes-min 1 --nodes-max 7 --node-ami auto \
@@ -81,8 +81,11 @@ eksctl create cluster --name geniusee-cluster --version 1.15 \
 	--kubeconfig ${KUBECONFIG}
 ```
 <img src="./images/kubeconfig.PNG">
-<img src="./images/get-nodes.PNG">
-
+## To check use this command:
+```bash
+$ eksctl get cluster
+```
+<img src="./images/k8s.PNG">
 ## Network Load Balancer with the NGINX Ingress resource in EKS
 Start by creating the mandatory resources for NGINX Ingress in your cluster:
 ```bash
