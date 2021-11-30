@@ -60,14 +60,25 @@ $ terraform apply --auto-approve
 ```
 ## Configure kubectl
 Now that you've provisioned your EKS cluster, you need to configure kubectl
+I used two options, the first is terraforming and the second is eksctl
 
-Run the following command to retrieve the access credentials for your cluster and automatically configure kubectl.
+1)Run the following command to retrieve the access credentials for your cluster and automatically configure kubectl.
 ```bash
 $ aws eks --region $(terraform output -raw region) update-kubeconfig --name $(terraform output -raw cluster_name)
 ```
-2)And Run with eksctl
+2)And Run with eksctl but you set variables for this options
 ```bash
-$ eksctl create cluster --name k8s-geniusee
+export AWS_ACCESS_KEY_ID=<>
+export AWS_SECRET_ACCESS_KEY=<>
+export AWS_DEFAULT_REGION=us-east-1
+export KUBECONFIG=~/.kube/config-eks-cluster
+
+eksctl create cluster --name geniusee-cluster --version 1.15 \
+        --region us-east-1 --zones "us-east-1b,us-east-1c" \
+	--nodegroup-name standard-workers --node-type m5a.4xlarge \
+         --nodes 5 --nodes-min 1 --nodes-max 7 --node-ami auto \
+	--full-ecr-access --appmesh-access --alb-ingress-access \
+	--kubeconfig ${KUBECONFIG}
 ```
 <img src="./images/kubeconfig.PNG">
 <img src="./images/get-nodes.PNG">
