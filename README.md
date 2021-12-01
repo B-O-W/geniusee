@@ -129,7 +129,7 @@ $ kubectl apply -k ./manifests/
 ```
 ## Check the result
 - http://geniusee-test.com
-<img src="./images/wordpress_ui.PNG">
+<img src="./images/wp.PNG">
 - https://geniusee-kibana.com/_plugin/kibana
 <img src="./images/kibana_ui.PNG">
 
